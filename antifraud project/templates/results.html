@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results Page</title>
+</head>
+<body>
+    <h1>Results Page</h1>
+    <p>Your file has been processed. Here are the results:</p>
+    <p><a href="{{ url_for('download') }}">Download Result</a></p>
+    <p><a href="{{ url_for('index') }}">Upload Another File</a></p>
+    <video width="320" height="240" controls>
+        <source src="{{ url_for('static', filename='sus.mp4') }}" type="video/mp4">
+        <source src="{{ url_for('static', filename='как я писал код.mp4') }}" type="video/mp4">
+    </video>
+    <source src="{{ url_for('static', filename='как я писал код.mp4') }}" type="video/mp4">
+
+</body>
+</html>
